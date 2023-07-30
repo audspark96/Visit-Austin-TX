@@ -3,8 +3,78 @@
 }
 
 body {
+  background-color: black;
   font-family: var(--font);
 }
-h1 {
-  color: blueviolet;
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/downtown-austin-texas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 170px 0;
+}
+header h1 {
+  font-weight: 700px;
+  font-size: 82px;
+  line-height: 1;
+  margin: 30px 0;
+}
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+header h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  line-height: 1.5;
+  background-color: white;
+  text-decoration: none;
+  padding: 16px 32px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1040px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: rgb(129, 85, 216);
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 14px;
+  }
 }
