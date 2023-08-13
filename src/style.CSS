@@ -49,11 +49,6 @@ header a {
   margin: 20px;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1040px;
-}
-
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/a71ac40b-60c3-491d-baad-f7df8dcbbe56-barbie_jos_png.webp");
@@ -120,25 +115,86 @@ main h3 {
   letter-spacing: 5px;
   color: #272044;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
 section {
-  max-width: 1200px;
   margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: rgb(202, 202, 202);
+}
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  padding: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #3f2a95;
+}
+.card {
+  background-color: white;
+  margin: 10px 0;
+  width: 200px;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 15px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1040px;
 }
 
 .grid {
   display: grid;
-  grid-gap: 20px;
+  gap: 20px;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
-
 .grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns-sm {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 .img-responsive {
   max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
 }
 @media (max-width: 960px) {
   header {
@@ -155,7 +211,7 @@ section {
   }
   .grid {
     grid-template-columns: 1fr;
-    grid-gap: 32px;
+    gap: 32px;
   }
   section {
     padding: 30px;
