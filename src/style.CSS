@@ -97,6 +97,7 @@ footer ul {
 
 main {
   background-color: white;
+  max-width: 800px;
 }
 
 main h2 {
