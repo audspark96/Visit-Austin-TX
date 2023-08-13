@@ -132,14 +132,14 @@ main h5 {
 main p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   color: #272044;
   opacity: 0.7;
 }
 section {
   margin: 0 auto;
-  padding: 100px;
+  padding: 80px;
 }
 
 section.secondary {
@@ -162,7 +162,6 @@ section.secondary {
 .card {
   background-color: white;
   margin: 10px 0;
-  width: 200px;
 }
 .card-body {
   padding: 30px;
@@ -170,14 +169,22 @@ section.secondary {
 .card-footer {
   padding: 15px;
 }
+.card-header.grid {
+  gap: 0;
+}
 .container {
   margin: 0 auto;
   max-width: 1040px;
+}
+.embed-responsive {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .grid {
   display: grid;
   gap: 20px;
+  max-width: 800px;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
@@ -190,7 +197,10 @@ section.secondary {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+}
+.instagram-embeds {
+  margin: 30px 0;
 }
 
 .text-center {
@@ -209,11 +219,18 @@ section.secondary {
   header h3 {
     font-size: 14px;
   }
+
+  section {
+    padding: 30px;
+  }
   .grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  section {
-    padding: 30px;
+  .card-header img {
+    display: none;
+  }
+  .embed-responsive {
+    aspect-ratio: 16/9;
   }
 }
