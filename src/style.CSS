@@ -15,6 +15,8 @@ header {
   color: white;
   text-align: center;
   padding: 170px 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 header h1 {
   font-weight: 700px;
@@ -97,7 +99,8 @@ footer ul {
 
 main {
   background-color: white;
-  max-width: 800px;
+  width: 800px;
+  margin: 0 auto;
 }
 
 main h2 {
